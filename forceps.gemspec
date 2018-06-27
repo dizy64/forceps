@@ -15,13 +15,8 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  if ENV['RAILS_VERSION']
-    s.add_dependency "rails", "= #{ENV['RAILS_VERSION']}"
-  else
-    s.add_dependency "rails", "~> 4.0"
-  end
-
-  s.add_dependency "logging", "~> 2.0.0"
+  s.add_dependency "rails", "= 5.1.1"
+  s.add_dependency "logging", "~> 2.2.0"
 
   s.add_development_dependency "sqlite3", "~> 1.3.8"
   s.add_development_dependency "database_cleaner", "~> 1.2.0"
